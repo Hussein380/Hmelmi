@@ -24,7 +24,7 @@ export async function verifyToken(token: string) {
 }
 
 export async function getSession() {
-  const session = cookies().get("admin_session")?.value;
+  const session = (await cookies()).get("admin_session")?.value;
   if (!session) return null;
   return await verifyToken(session);
 }
