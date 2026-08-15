@@ -6,7 +6,7 @@ import { Footer } from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.hmelmilimited.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.hmelmi.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
