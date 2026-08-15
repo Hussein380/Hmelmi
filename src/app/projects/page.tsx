@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { CTABanner } from "@/components/sections/CTABanner";
+import { CheckCircle2, Truck, Droplet } from "@/components/shared/Icons";
+import { FortifyLogo, ElvioraLogo } from "@/components/ui/marquee";
 
 export const metadata: Metadata = {
   title: "Projects & Partnerships | HM Elmi Limited",
   description: "View HM Elmi Limited's major petroleum logistics projects and partnerships, including cross-border deliveries to the DRC for Fortify International and wholesale trading for Elviora.",
 };
-import { CTABanner } from "@/components/sections/CTABanner";
-import { CheckCircle2, Truck, Droplet } from "@/components/shared/Icons";
-import { FortifyLogo, ElvioraLogo } from "@/components/ui/marquee";
 
 export default function ProjectsPage() {
   return (
