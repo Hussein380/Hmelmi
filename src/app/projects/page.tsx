@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { CheckCircle2, Truck, Droplet } from "@/components/shared/Icons";
 import { FortifyLogo, ElvioraLogo } from "@/components/ui/marquee";
@@ -21,10 +22,16 @@ export default function ProjectsPage() {
           
           {/* Case Study 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 bg-brand-blue-tint p-8 md:p-12 rounded-3xl relative overflow-hidden group">
-              <div className="absolute -right-12 -top-12 w-64 h-64 bg-brand-orange/10 rounded-full blur-3xl group-hover:bg-brand-orange/20 transition-colors" />
-              <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
-                 <div className="w-48 h-48 rounded-full border border-brand-navy/10 flex flex-col items-center justify-center p-4 text-center bg-white shadow-xl scale-125">
+            <div className="order-2 lg:order-1 relative rounded-3xl overflow-hidden group h-[400px] shadow-2xl">
+              <Image 
+                src="/images/photos/cross-border.jpg" 
+                alt="Cross-border delivery to DRC" 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-105" 
+              />
+              <div className="absolute inset-0 bg-brand-navy/60 transition-opacity duration-700 group-hover:bg-brand-navy/50" />
+              <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                 <div className="w-48 h-48 rounded-full border border-white/20 flex flex-col items-center justify-center p-4 text-center bg-white/95 backdrop-blur-sm shadow-xl scale-110">
                     <FortifyLogo className="!grayscale-0 !opacity-100 scale-125" />
                  </div>
               </div>
@@ -93,10 +100,16 @@ export default function ProjectsPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-brand-orange/5 p-8 md:p-12 rounded-3xl relative overflow-hidden group">
-              <div className="absolute -left-12 -bottom-12 w-64 h-64 bg-brand-navy/5 rounded-full blur-3xl group-hover:bg-brand-navy/10 transition-colors" />
-              <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
-                 <div className="w-48 h-48 rounded-full border border-brand-navy/10 flex flex-col items-center justify-center p-4 text-center bg-white shadow-xl relative overflow-hidden scale-125">
+            <div className="relative rounded-3xl overflow-hidden group h-[400px] shadow-2xl">
+              <Image 
+                src="/images/photos/storage-terminal.jpg" 
+                alt="Petroleum trading terminal" 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-105" 
+              />
+              <div className="absolute inset-0 bg-brand-navy/60 transition-opacity duration-700 group-hover:bg-brand-navy/50" />
+              <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                 <div className="w-48 h-48 rounded-full border border-white/20 flex flex-col items-center justify-center p-4 text-center bg-white/95 backdrop-blur-sm shadow-xl scale-110">
                     <ElvioraLogo className="!grayscale-0 !opacity-100 scale-125" />
                  </div>
               </div>
