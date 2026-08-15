@@ -16,8 +16,10 @@ export const metadata: Metadata = {
   },
   description: "HM Elmi Limited is a leading petroleum trading and logistics company in East Africa. We specialize in fuel transport, cross-border clearance, fleet maintenance, and seamless supply across Kenya, DRC, Uganda, Rwanda, and South Sudan.",
   keywords: [
-    "Hmelmilimited", "Hmelmi", "HM Elmi", "Petroleum trading East Africa", 
-    "Fuel transport logistics", "Cross-border clearance DRC", "Fuel delivery Kenya", 
+    "Hmelmilimited", "Hmelmi", "HM Elmi", "HM Elmi Ltd", "hmelmi ltd", "hmelmiltd",
+    "HM Elmi Limited", "HM Elmi Petroleum", "HM Elmi Logistics",
+    "Petroleum trading East Africa", "Fuel transport logistics", 
+    "Cross-border clearance DRC", "Fuel delivery Kenya", 
     "Tanker fleet maintenance", "Wholesale petroleum supply", "Mombasa fuel logistics",
     "Kampala fuel transport", "Kigali petroleum", "Beni DRC delivery"
   ],
