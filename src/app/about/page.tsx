@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Hmelmilimited",
+  description: "Learn about Hmelmi's history, mission, and our expansive petroleum logistics network across Kenya, DRC, and East Africa.",
+};
 import { company } from "@/content/company";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Marquee } from "@/components/ui/marquee";

@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
+
+export const metadata: Metadata = {
+  title: "Our Services | Petroleum Trading & Logistics | HM Elmi Limited",
+  description: "Explore our specialized services: cross-border petroleum clearance, bulk fuel transport, garage maintenance, and regional petroleum trading.",
+};
 import { CTABanner } from "@/components/sections/CTABanner";
 
 export default function ServicesPage() {

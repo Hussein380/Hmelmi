@@ -2,7 +2,13 @@ import Image from "next/image";
 import { company } from "@/content/company";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { Metadata } from "next";
 import { ShieldCheck, Truck } from "@/components/shared/Icons";
+
+export const metadata: Metadata = {
+  title: "Fleet & Compliance | Petroleum Logistics | HM Elmi Limited",
+  description: "Learn about our rigorous safety standards, real-time fleet tracking, and regulatory compliance that keeps our tanker fleet safe across East Africa.",
+};
 
 export default function FleetCompliancePage() {
   return (

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
+import Link from "next/link";
+
 export function WhyUs() {
   const steps = [
     { title: "Trade", desc: "Sourcing & Export" },
@@ -16,14 +18,15 @@ export function WhyUs() {
       <div className="container mx-auto px-4 md:px-8 max-w-screen-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
+
           <div className="lg:col-span-5 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy">
               Why HM Elmi?
             </h2>
             <div className="h-1 w-20 bg-brand-orange rounded-full" />
             <p className="text-lg text-brand-gray leading-relaxed text-balance">
-              Most trading companies don't own the trucks. Most transporters don't own the border relationships. 
-              <strong className="text-brand-navy font-semibold"> HM Elmi Limited does</strong> — giving clients one accountable partner from purchase to delivery.
+              Most <Link href="/services/trading-export" className="text-brand-blue hover:underline hover:text-brand-orange transition-colors">petroleum trading companies</Link> don't own the <Link href="/fleet-compliance" className="text-brand-blue hover:underline hover:text-brand-orange transition-colors">tanker fleet</Link>. Most transporters don't own the <Link href="/services/cross-border-clearance" className="text-brand-blue hover:underline hover:text-brand-orange transition-colors">cross-border clearance</Link> relationships. 
+              <strong className="text-brand-navy font-semibold"> HM Elmi Limited does</strong> — giving clients one fully integrated partner from purchase to final delivery across East Africa.
             </p>
           </div>
 
